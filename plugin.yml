@@ -1,0 +1,11 @@
+name: olyChat
+main: com.olympuspvp.chat.olyChat
+version: 0.1b
+author: CalDaBeast
+description: Chat handling
+
+commands:
+    cSet:
+        description: set ChatItems in olyChat
+    colors:
+        description: gives the user a list of Minecraft-enabed colors
