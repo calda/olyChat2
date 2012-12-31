@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -199,7 +200,9 @@ public class olyChat extends JavaPlugin{
 	
 	public String getName(String playerName){
 		String name = chatData.get(playerName).get(ChatItem.Name);
-		if(name == null) return playerName;
+		if(name == null) return ChatColor.GRAY + playerName;
+		name = name.replaceAll("%name", playerName);
+		name = ChatColor.translateAlternateColorCodes('&', name);
 		return name;
 	}
 	
