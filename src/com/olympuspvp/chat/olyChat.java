@@ -72,6 +72,7 @@ public class olyChat extends JavaPlugin{
 	public boolean onCommand(CommandSender s, Command cc, String c, String[] args){
 		if(cc.getLabel().equalsIgnoreCase("cset")) command.onCommandCSet(s, args);
 		if(cc.getLabel().equalsIgnoreCase("colors")) command.onCommandColors(s);
+		if(cc.getLabel().equalsIgnoreCase("who")) command.sendWhoCommand(s);
 		return true;
 	}
 	

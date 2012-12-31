@@ -9,3 +9,5 @@ commands:
         description: set ChatItems in olyChat
     colors:
         description: gives the user a list of Minecraft-enabed colors
+    who:
+        description: gives a list of online players
