@@ -14,7 +14,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class olyChat extends JavaPlugin{
 
-	private final File configFile = new File("plugins" + File.separator + "olyChat" + File.separator + "config.yml");
+	private final File configFile = new File("plugins" + File.separator + "olyChat" + File.separator + "data.yml");
 	private static FileConfiguration config;
 	private HashMap<String, HashMap<ChatItem, String>> chatData = new HashMap<String, HashMap<ChatItem, String>>();
 	private final HashMap<ChatItem, String> defaults = new HashMap<ChatItem, String>();
