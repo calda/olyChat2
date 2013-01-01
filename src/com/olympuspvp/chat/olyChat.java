@@ -238,5 +238,4 @@ public class olyChat extends JavaPlugin{
 			loadData(name);
 		}
 	}
-	
 }
